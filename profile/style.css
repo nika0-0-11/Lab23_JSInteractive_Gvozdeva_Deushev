@@ -66,6 +66,7 @@ button {
     border-radius: 5px;
     border: 1px solid rgb(59, 34, 90);
     min-height: 150px;
+    white-space: pre-line;
 }
 
 .error {

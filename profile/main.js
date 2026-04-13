@@ -39,3 +39,23 @@ function validate() {
 
     return true;
 }
+
+saveBtn.addEventListener("click", function() {
+    if (validate()) {
+        userInfo.textContent = 
+        "Имя: " + nameInput.value.trim() + "\n" +
+        "Возраст: " + ageInput.value.trim() + "\n" +
+        "Город: " + cityInput.value.trim() + "\n" + 
+        "Хобби: " + hobbyInput.value.trim();
+        alert("Сохранено");
+    }
+});
+
+clearBtn.addEventListener("click", function() {
+    nameInput.value = "";
+    ageInput.value = "";
+    cityInput.value = "";
+    hobbyInput.value = "";
+    userInfo.textContent = "Нет данных";
+    alert("Очищено");
+});
